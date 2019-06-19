@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
-import { withHistory, Link } from 'react-router-dom'
 import $ from 'jquery';
-import './Home.css';
-import logo from '../login/LogoIntelix.png'
+
+import Sidebar from '../Sidebar/Sidebar.jsx';
+
 
 export default class Home extends Component {
     constructor(){
@@ -20,34 +20,9 @@ export default class Home extends Component {
         return(
            <div className="Home">
                <div id="wrapper" ref="wrapper">
-                    <div id="sidebar-wrapper">
-                        <ul className="sidebar-nav">
-                            <li className="sidebar-brand">
-                                <Link to="/"> <img src={logo}></img> </Link>
-                            </li>
-                            <li>
-                                <a href="#">Dashboard</a>
-                            </li>
-                            <li>
-                                <a href="#">Shortcuts</a>
-                            </li>
-                            <li>
-                                <Link to="/overview">Users</Link>
-                            </li>
-                            <li>
-                                <a href="#">Events</a>
-                            </li>
-                            <li>
-                                <a href="#">About</a>
-                            </li>
-                            <li>
-                                <a href="#">Services</a>
-                            </li>
-                            <li>
-                                <a href="#">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
+                   <div className="sidebar">
+                        <Sidebar />
+                   </div>
 
                 <div id="page-content-wrapper">
                     <div className="container-fluid">

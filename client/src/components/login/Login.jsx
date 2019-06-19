@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import logo from '../login/LogoIntelix.png'
+import logo from './LogoIntelix.png'
 
-import '../login/Login.css';
+import './Login.css';
 
 export default class Login extends Component {
     
