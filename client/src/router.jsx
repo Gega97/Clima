@@ -4,6 +4,7 @@ import {createBrowserHistory} from 'history';
 import Home from './components/Home/Home.jsx';
 import Login from './components/Login/Login.jsx';
 import PersonList from './App';
+import RecoverPassword from './components/Recover Password/Recover.Password.jsx'
 
 const browserHistory = createBrowserHistory();
 
@@ -12,7 +13,7 @@ export const renderRoutes = () => (
         <Switch>
             <Route exact={true} path="/" component={Home}/>
             <Route path="/login" component={Login}/>
-            <Route path="/personlist" component={PersonList}/>
+            <Route path="/recoverPassword" component={RecoverPassword}/>
         </Switch>
     </Router>
 );

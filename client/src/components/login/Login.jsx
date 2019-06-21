@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import { withHistory, Link } from 'react-router-dom'
 import logo from './LogoIntelix.png'
 
 import './Login.css';
@@ -35,7 +36,7 @@ export default class Login extends Component {
                     <div className="row justify-content-center align-items-center" id="center">
                         <div className="col-md-6">
                             <div className="card">
-                                <div className="card-header">
+                                <div className="card-header text-center">
                                     <img src = {logo}></img>
                                 </div>
                                 <div className="card-body">
@@ -68,10 +69,13 @@ export default class Login extends Component {
                                                 required />
                                             </div>
                                         </div>
+                                        <div class="form-group text-center">
+                                        <Link to="/recoverPassword">Forget Password?</Link>
+                                        </div>
                                         <div className="text-center">
                                             <button
                                              type="submit"
-                                             className="btn">Login</button>
+                                             className="btn btn-light">Login</button>
                                         </div>
                                     </form>
                                 </div>

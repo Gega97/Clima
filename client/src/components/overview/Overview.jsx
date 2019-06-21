@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { withHistory, Link } from 'react-router-dom'
 import $ from 'jquery';
-import logo from '../login/LogoIntelix.png'
+import logo from '../Login/LogoIntelix.png'
 
 export default class Overview extends Component {
 
