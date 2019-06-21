@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
 import {Router, Switch, Route } from 'react-router-dom';
 import {createBrowserHistory} from 'history';
-import Overview from './components/overview/Overview';
 import Home from './components/Home/Home.jsx';
-import Login from './components/login/Login.jsx';
+import Login from './components/Login/Login.jsx';
 import PersonList from './App';
+import RecoverPassword from './components/Recover Password/Recover.Password.jsx'
 
 const browserHistory = createBrowserHistory();
 
@@ -12,9 +12,8 @@ export const renderRoutes = () => (
     <Router history={browserHistory}>
         <Switch>
             <Route exact={true} path="/" component={Home}/>
-            <Route path="/overview" component={Overview}/>
             <Route path="/login" component={Login}/>
-            <Route path="/personlist" component={PersonList}/>
+            <Route path="/recoverPassword" component={RecoverPassword}/>
         </Switch>
     </Router>
 );

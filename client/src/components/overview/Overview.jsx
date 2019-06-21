@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { withHistory, Link } from 'react-router-dom'
 import $ from 'jquery';
-import logo from '../login/LogoIntelix.png'
+import logo from '../Login/LogoIntelix.png'
 
 export default class Overview extends Component {
 
@@ -23,25 +23,25 @@ export default class Overview extends Component {
                                 <Link to="/"> <img src={logo}></img> </Link>
                             </li>
                             <li>
-                                <a href="#">Dashboard</a>
+                                <a href="#">Item 1</a>
                             </li>
                             <li>
-                                <a href="#">Shortcuts</a>
+                                <a href="#">Item 2</a>
                             </li>
                             <li>
-                                <Link to="/overview">Users</Link>
+                                <Link to="/overview">Item 3</Link>
                             </li>
                             <li>
-                                <a href="#">Events</a>
+                                <a href="#">Item 4</a>
                             </li>
                             <li>
-                                <a href="#">About</a>
+                                <a href="#">Item 5</a>
                             </li>
                             <li>
-                                <a href="#">Services</a>
+                                <a href="#">Item 6</a>
                             </li>
                             <li>
-                                <a href="#">Contact</a>
+                                <a href="#">Item 7</a>
                             </li>
                         </ul>
                     </div>
