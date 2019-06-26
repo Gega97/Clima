@@ -1,0 +1,12 @@
+.dropdown-btn {
+  text-decoration: none;
+  color: #75787B;
+  border: none;
+  background: none;
+  padding: 0px 0px 0px 0px;
+
+}
+
+.dropdown-btn:hover{
+  font-weight: bold;
+}

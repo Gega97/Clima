@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import { withHistory, Link } from 'react-router-dom'
-import logo from './LogoIntelix.png'
+import logo from '../../../src/LogoIntelix.png'
+import UpdateImage from '../UpdateImage/Update.Image.jsx';
 
 import './Login.css';
 
@@ -42,47 +43,45 @@ export default class Login extends Component {
                                 <div className="card-body">
                                     <form onSubmit={this.handleSubmit}>
                                         <div className="form-group row">
-                                            <label 
-                                            htmlFor="username" 
-                                            className="col-md-4 col-form-label text-md-right">User</label>
-                                            <div className="col-md-6">
+                                            <div className="col-md-12">
                                                 <input 
                                                 type="text" 
                                                 className="form-control" 
                                                 ref="username"
                                                 id="username"
                                                 onChange={this.handleChange} 
+                                                placeholder="Usuario"
                                                 required/>
                                             </div>
                                         </div>                                            
                                         <div className="form-group row">
-                                            <label
-                                            htmlFor="password" 
-                                            className="col-md-4 col-form-label text-md-right">Password</label>
-                                            <div className="col-md-6">
+                                            <div className="col-md-12">
                                                 <input
                                                 type="password"
                                                 className="form-control"
                                                 ref="password" 
                                                 id="password"
                                                 onChange={this.handleChange}
+                                                placeholder="Contraseña"
                                                 required />
                                             </div>
                                         </div>
                                         <div class="form-group text-center">
-                                        <Link to="/recoverPassword">Forget Password?</Link>
+                                        <Link to="/recoverPassword">Olvidaste tu contraseña?</Link>
                                         </div>
                                         <div className="text-center">
                                             <button
                                              type="submit"
-                                             className="btn btn-light">Login</button>
+                                             className="btn btn-light">Ingresar</button>
                                         </div>
                                     </form>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
+        </div>
+        
+               
             </div>
         )
     }

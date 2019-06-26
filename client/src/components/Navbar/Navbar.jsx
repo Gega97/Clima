@@ -1,48 +1,30 @@
 import React, {Component} from 'react';
 import { withHistory, Link } from 'react-router-dom'
-import $ from 'jquery';
-import logo from '../Login/LogoIntelix.png'
+
+import './Navbar.css';
 
 export default class Navbar extends Component {
 
     componentDidMount(){
-        $(document).ready(() =>{
-            $('#sidebarCollapse').on('click', () => {
-                $('#sidebar').toggleClass('active');
-            })
-        })
+        
     }
     render(){
         return(
             <div className="Navbar">
-               <nav className="navbar navbar-expand-lg navbar-light bg-light">
-                   <button className="btn btn-info" id="sidebarCollapse" type="button">
-                        <i className="fas fa-align-justify"></i><span>Toggle Sidebar</span>
-                   </button>
-                   <a className="navbar-brand" href="#">Navbar</a>
-                   <button className="navbar-toggler"
-                   type="button"
-                   data-toggle="collapse"
-                   data-target="#navbarNav"
-                   aria-controls="navbarNav"
-                   aria-expanded="false"
-                   aria-label="Toggle navigation">
-                       <span className="navbar-toggler-icon"></span>
-                   </button>
-                   <div className="collapse navbar-collapse" id="navbarNav">
-                       <ul className="navbar-nav">
-                            <li className="navbar-item active">
-                                <a className="nav-link" href="#">Home<span className="sr-only">(current)</span></a>
-                            </li>
-                            <li className="navbar-item">
-                                <a className="nav-link" href="#">Home</a>
-                            </li>
-                            <li className="navbar-item">
-                                <a className="nav-link" href="#">Home</a>
-                            </li>
-                       </ul>
-                   </div>
-               </nav>
+                <nav class="navbar navbar-expand-sm bg-light">
+
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Item 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Item 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Item 3</a>
+                    </li>
+                </ul>
+                </nav>
             </div>
         )
     }
