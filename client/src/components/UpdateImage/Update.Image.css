@@ -6,5 +6,10 @@ i:hover {
     color:#00BFB3;
     cursor:pointer;
 }
+
+label {
+    margin-top:7px;
+}
+
   
   

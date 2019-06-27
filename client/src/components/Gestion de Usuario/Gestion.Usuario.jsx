@@ -3,7 +3,7 @@ import $ from 'jquery';
 
 import Navbar from '../Navbar/Navbar.jsx';
 import Sidebar from '../Sidebar/Sidebar.jsx';
-import Form from '../Form/Form.jsx';
+
 import './Gestion.Usuario.css';
 
 export default class GestionUsuario extends Component {
@@ -35,7 +35,7 @@ export default class GestionUsuario extends Component {
                             </div>
                             <div className="row">
                                 <div className="col-sm-9">
-                                    <Form />
+                                    
                                 </div>
                                 <div className="col-sm-3">
                                 

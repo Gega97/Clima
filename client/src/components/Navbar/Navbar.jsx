@@ -14,6 +14,9 @@ export default class Navbar extends Component {
                 <nav className="navbar navbar-expand-sm bg-light">
                 <ul className="navbar-nav mr-auto">
                     <li className="nav-item">
+                        <UploadImage />
+                    </li>&nbsp;
+                    <li className="nav-item">
                         <a className="nav-link" href="#menu-toggle" id="menu-toggle"><i class="fa fa-bars"></i></a>
                     </li>
                     {!this.props.items == false ? 
@@ -24,11 +27,6 @@ export default class Navbar extends Component {
                                     </li>
                     }) : <li></li>}
                     
-                </ul>
-                <ul className="navbar-nav ml-auto">
-                    <li className="nav-item">
-                        <UploadImage />
-                    </li>
                 </ul>
                 </nav>
             </div>

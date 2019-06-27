@@ -16,7 +16,6 @@ export default class Form extends Component {
                                     id="first-name"
                                     ref="firstName"
                                     className="form-control"
-                                    
                                     required/>
                                 </div>
                             </div>
