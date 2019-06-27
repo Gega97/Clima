@@ -22,7 +22,7 @@ export default class Parametrizacion extends Component {
                     <div id="page-content-wrapper">
                         <div className="container-fluid">
                             <div className="row">
-                                <div className="col s12">
+                                <div className="col-sm-12">
                                     <Navbar
                                     items={['Tipo de componente', 'Tipo de respuesta','Escala de medición', 'Datos Demográficos', 'Dimensión y Subdimensión']} />
                                 </div>
