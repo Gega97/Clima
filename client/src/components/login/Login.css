@@ -8,3 +8,15 @@ a{
 a:hover{
     color:#75787B 
 }
+.card-header {
+    color:#75787B;
+}
+
+.btn {
+    box-shadow: 2px 2px 2px #666;
+    color:#75787B;  
+}
+
+.btn:hover{
+    color:#75787B
+}

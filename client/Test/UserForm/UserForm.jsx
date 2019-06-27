@@ -58,9 +58,7 @@ export default class UserForm extends Component {
     render(){
     return(
         <div className="UserForm">
-            <div className="container">
-                <div className="row">
-                    <div className="col-md-12">
+            
                         <h1>Add Users</h1>
                         <hr className="bg-info"></hr>
                         <p>Te invitamos a crear usuarios</p>
@@ -136,9 +134,7 @@ export default class UserForm extends Component {
                                 </button> 
                             </div>
                         </form>
-                    </div>
-                </div>
-            </div>
+                
         </div>
     
     )}

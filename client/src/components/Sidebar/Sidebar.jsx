@@ -1,76 +1,48 @@
 import React, {Component} from 'react';
 import { withHistory, Link } from 'react-router-dom'
-import $ from 'jquery';
+import $ from 'jquery'
+import logo from '../../LogoIntelix.png';
+import './Sidebar.css';
+
 
 
 export default class Sidebar extends Component {
 
-    componentDidMount(){
-        $(document).ready(() =>{
-            $('#sidebarCollapse').on('click', () => {
-                $('#sidebar').toggleClass('active');
-            })
-        })
-    }
-
     render(){
         return(
-            <div className="Sidebar">
-               <ul className="list-unstyled components">
-                   <p>Texto de prueba</p>
-                   <li className="active">
-                        <a href="#homeSubmenu" 
-                        data-toggle="collapse" 
-                        aria-expanded="false" 
-                        className="dropdown-toggle">Home</a>
-                        <ul className="collapse list-unstyled" id="homeSubmenu">
-                            <li>
-                                <a href="#">Item 1</a>
-                            </li>
-                            <li>
-                                <a href="#">Item 1</a>
-                            </li>
-                            <li>
-                                <a href="#">Item 1</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">About</a>
-                    </li>
-                    <li>
-                        <a href="#pageSubmenu" 
-                        data-toggle="collapse" 
-                        aria-expanded="false" 
-                        className="dropdown-toggle">Home</a>
-                        <ul className="collapse list-unstyled" id="pageSubmenu">
-                            <li>
-                                <a href="#">page 1</a>
-                            </li>
-                            <li>
-                                <a href="#">page 1</a>
-                            </li>
-                            <li>
-                                <a href="#">page 1</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">Services</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact Us</a>
-                    </li>
-               </ul>
-               <ul className="list-unstyled">
-                    <li>
-                        <a href="#" className="download">Download</a>
-                    </li>
-                    <li>
-                        <a href="#" className="article">Article</a>
-                    </li>
-               </ul>
-            </div>
+            
+          <div id="sidebar-wrapper">
+          <ul className="sidebar-nav">
+              <li className="sidebar-brand">
+                  <a href="#">
+                      <img src={logo}></img>
+                  </a>
+              </li>
+              <li id="GestionUsuarios">
+                <Link to="/">Gestión de Usuario</Link>
+              </li>
+              <li>
+                  <a href="#">Actualización Logo</a>
+              </li>
+              <li>
+                <Link to="/DataUpdate">Actualización de Datos</Link>
+              </li>
+              <li>
+                <Link to="/roles">Roles y Privilegios</Link>
+              </li>
+              <li>
+                <Link to="/parametrization">Parametrización</Link>
+              </li>
+              <li id="Instrumento">
+                  <Link to="/instrument">Instrumento</Link>
+              </li>
+              <li>
+                <Link to="/reporter">Reporteador</Link>
+              </li>
+          </ul>
+      </div>
+      
+            
         )
     }
 }
