@@ -22,7 +22,7 @@ export default class Reporteador extends Component {
                     <div id="page-content-wrapper">
                         <div className="container-fluid">
                             <div className="row">
-                                <div className="col s12">
+                                <div className="col-sm-12">
                                     <Navbar/>
                                 </div>
                             </div>
