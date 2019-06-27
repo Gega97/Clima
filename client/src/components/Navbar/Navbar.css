@@ -1,8 +1,17 @@
 .nav-item {
-    color:#75787B
+    color:#75787B;
+    margin:auto;
 }
 
 .nav-item:hover{
     color:#75787B;
     font-weight: bold;
 }
+
+.navbar {
+    height:60px;
+}
+
+
+
+  

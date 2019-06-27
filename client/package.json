@@ -34,6 +34,7 @@
     ]
   },
   "devDependencies": {
-    "react-bootstrap": "^1.0.0-beta.9"
+    "react-bootstrap": "^1.0.0-beta.9",
+    "react-tooltip": "^3.10.0"
   }
 }

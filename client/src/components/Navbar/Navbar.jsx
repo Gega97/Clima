@@ -1,27 +1,33 @@
 import React, {Component} from 'react';
 import { withHistory, Link } from 'react-router-dom'
 
+import UploadImage from '../UpdateImage/Update.Image.jsx';
+
 import './Navbar.css';
 
 export default class Navbar extends Component {
 
-    componentDidMount(){
-        
-    }
     render(){
+        
         return(
             <div className="Navbar">
-                <nav class="navbar navbar-expand-sm bg-light">
-
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Item 1</a>
+                <nav className="navbar navbar-expand-sm bg-light">
+                <ul className="navbar-nav mr-auto">
+                    <li className="nav-item">
+                        <a className="nav-link" href="#menu-toggle" id="menu-toggle"><i class="fa fa-bars"></i></a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Item 2</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Item 3</a>
+                    {!this.props.items == false ? 
+                        this.props.items.map(item => {
+                            return <li className="nav-item">
+                                        <a className="nav-link" 
+                                        href="#">{item}</a>
+                                    </li>
+                    }) : <li></li>}
+                    
+                </ul>
+                <ul className="navbar-nav ml-auto">
+                    <li className="nav-item">
+                        <UploadImage />
                     </li>
                 </ul>
                 </nav>

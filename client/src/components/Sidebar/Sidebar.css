@@ -10,3 +10,8 @@
 .dropdown-btn:hover{
   font-weight: bold;
 }
+
+.active {
+  background-color: #fff;
+  font-weight: bold;
+}

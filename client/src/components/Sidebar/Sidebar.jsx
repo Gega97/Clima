@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import { withHistory, Link } from 'react-router-dom'
+import $ from 'jquery'
 import logo from '../../LogoIntelix.png';
 import './Sidebar.css';
 
@@ -11,36 +12,32 @@ export default class Sidebar extends Component {
         return(
             
           <div id="sidebar-wrapper">
-          <ul class="sidebar-nav">
-              <li class="sidebar-brand">
+          <ul className="sidebar-nav">
+              <li className="sidebar-brand">
                   <a href="#">
                       <img src={logo}></img>
                   </a>
               </li>
-              <li>
-                  <a href="#">Inicio</a>
+              <li id="GestionUsuarios">
+                <Link to="/">Gestión de Usuario</Link>
               </li>
               <li>
-                  <a href="#">Configuración</a>
+                  <a href="#">Actualización Logo</a>
               </li>
               <li>
-                  <a href="#">Usuarios</a>
+                <Link to="/DataUpdate">Actualización de Datos</Link>
               </li>
               <li>
-                  <button className="dropdown-btn">
-                      Instrumentos
-                      <i class="fa fa-caret-down"></i>
-                  </button>
-                  
+                <Link to="/roles">Roles y Privilegios</Link>
               </li>
               <li>
-                  <a href="#">Acerca de:</a>
+                <Link to="/parametrization">Parametrización</Link>
+              </li>
+              <li id="Instrumento">
+                  <Link to="/instrument">Instrumento</Link>
               </li>
               <li>
-                  <a href="#">Servicios</a>
-              </li>
-              <li>
-                  <a href="#">Soporte</a>
+                <Link to="/reporter">Reporteador</Link>
               </li>
           </ul>
       </div>
