@@ -20,12 +20,12 @@ export default class Sidebar extends Component {
               </li>
               <li id="GestionUsuarios">
                 <Link to="/">Gestión de Usuario</Link>
-                  <li className="sub-item">
+              </li>
+              <li className="sub-item">
                     Crear
-                  </li>
-                  <li className="sub-item">
+              </li>
+              <li className="sub-item">
                     Modificar
-                  </li>
               </li>
               <li>
                   <a href="#">Actualización Logo</a>
@@ -41,33 +41,33 @@ export default class Sidebar extends Component {
               </li>
               <li className="sub-item">
                     Tipo de Componente
-                  </li>
-                  <li className="sub-item">
+              </li>
+              <li className="sub-item">
                     Tipo de Respuesta
-                  </li>
-                  <li className="sub-item-chield">
-                      Niveles de Respuesta
-                  </li>
-                  <li className="sub-item">
+              </li>
+              <li className="sub-item-chield">
+                    Niveles de Respuesta
+              </li>
+              <li className="sub-item">
                     Escalas de Medición
-                  </li>
-                  <li className="sub-item-chield">
+              </li>
+              <li className="sub-item-chield">
                       Niveles de Respuesta
-                   </li>
-                  <li className="sub-item">
+              </li>
+              <li className="sub-item">
                     Datos Demográficos
-                  </li>
-                  <li className="sub-item">
+              </li>
+              <li className="sub-item">
                     Dimensión y Subdimensión
-                  </li>
+              </li>
               <li id="Instrumento">
                   <Link to="/instrument">Instrumento</Link>
-                  <li className="sub-item">
+              </li>
+              <li className="sub-item">
                     Crear
-                  </li>
-                  <li className="sub-item">
+              </li>
+              <li className="sub-item">
                     Duplicar
-                  </li>
               </li>
               <li>
                 <Link to="/reporter">Reporteador</Link>
