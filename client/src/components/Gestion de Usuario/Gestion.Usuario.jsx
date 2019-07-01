@@ -34,7 +34,7 @@ export default class GestionUsuario extends Component {
                                 </div>
                             </div>
                             <div className="row">
-                                <div className="col-sm-9">
+                                <div className="col-sm-8">
                                     <Form />
                                 </div>
                                 <div className="col-sm-3">

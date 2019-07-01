@@ -1,0 +1,11 @@
+h1{
+    font-size: 2rem;
+    color: #78757B;
+}
+.input-vcenter{
+    position: relative;
+    top: 22%;
+}
+.btn {
+    box-shadow: 2px 2px 2px #00bab3;
+}

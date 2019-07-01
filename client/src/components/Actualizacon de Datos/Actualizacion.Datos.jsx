@@ -3,7 +3,7 @@ import $ from 'jquery';
 
 import Navbar from '../Navbar/Navbar.jsx';
 import Sidebar from '../Sidebar/Sidebar.jsx';
-
+import FormDateUpdate from '../FormDateUpdate/FormDataUpdate.jsx';
 
 export default class ActualizacionDatos extends Component {
 
@@ -23,7 +23,8 @@ export default class ActualizacionDatos extends Component {
                         <div className="container-fluid">
                             <div className="row">
                                 <div className="col s12">
-                                    <Navbar/>
+                                <Navbar
+                                    items={['Actualizar']} />
                                 </div>
                             </div>
                             <div className="row">
@@ -32,8 +33,8 @@ export default class ActualizacionDatos extends Component {
                                 </div>
                             </div>
                             <div className="row">
-                                <div className="col-sm-9">
-                                
+                            <div className="col-sm-9">
+                                    <FormDateUpdate />
                                 </div>
                                 <div className="col-sm-3">
                                 
