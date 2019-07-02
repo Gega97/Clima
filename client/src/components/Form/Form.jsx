@@ -99,7 +99,7 @@ export default class Form extends Component {
                         <div className="text-center">
                             <button
                                 type="submit"
-                                className="btn btn-light">Crear</button>
+                                className="btn btn-light">Guardar</button>
                         </div>
                     </div>
                 </form>
