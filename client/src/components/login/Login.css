@@ -6,7 +6,8 @@ a{
     color:#75787B 
 }
 a:hover{
-    color:#75787B 
+    color:#75787B;
+    text-decoration: none;
 }
 .card-header {
     color:#75787B;
@@ -19,4 +20,9 @@ a:hover{
 
 .btn:hover{
     color:#75787B
+}
+
+.input {
+    position: relative;
+    margin: auto;
 }

@@ -35,15 +35,15 @@ export default class Login extends Component {
             <div className="Login">
                 <div className="container">
                     <div className="row justify-content-center align-items-center" id="center">
-                        <div className="col-md-6">
+                        <div className="col-sm-5">
                             <div className="card">
                                 <div className="card-header text-center">
                                     <img src = {logo}></img>
                                 </div>
                                 <div className="card-body">
-                                    <form onSubmit={this.handleSubmit}>
+                                    <form onSubmit={this.handleSubmit} className="form">
                                         <div className="form-group row">
-                                            <div className="col-md-12">
+                                            <div className="col-sm-8 text-center input">
                                                 <input 
                                                 type="text" 
                                                 className="form-control" 
@@ -55,7 +55,7 @@ export default class Login extends Component {
                                             </div>
                                         </div>                                            
                                         <div className="form-group row">
-                                            <div className="col-md-12">
+                                            <div className="col-sm-8 input">
                                                 <input
                                                 type="password"
                                                 className="form-control"
@@ -66,13 +66,15 @@ export default class Login extends Component {
                                                 required />
                                             </div>
                                         </div>
-                                        <div class="form-group text-center">
-                                        <Link to="/recoverPassword">Olvidaste tu contraseña?</Link>
+                                        <div className="form-group text-center">
+                                        <Link to="/recoverPassword">Recuperar contraseña</Link>
                                         </div>
                                         <div className="text-center">
-                                            <button
-                                             type="submit"
-                                             className="btn btn-light">Ingresar</button>
+                                            <Link to="/">
+                                                <button
+                                                type="submit"
+                                                className="btn btn-light">Ingresar</button>
+                                                </Link>
                                         </div>
                                     </form>
                                 </div>
