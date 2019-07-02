@@ -7,6 +7,15 @@ import './Navbar.css';
 
 export default class Navbar extends Component {
 
+    state = {
+        page:''
+    }
+
+    handleChange = (event) => {
+        this.setState({page:event.target.name});
+        console.log(this.state);
+    }
+
     render(){
         
         return(
@@ -14,21 +23,23 @@ export default class Navbar extends Component {
                 <nav className="navbar navbar-expand-sm bg-light">
                 <ul className="navbar-nav mr-auto">
                     <li className="nav-item">
-                        <a className="nav-link" href="#menu-toggle" id="menu-toggle"><i class="fa fa-bars"></i></a>
+                        <UploadImage />
+                    </li>&nbsp;
+                    <li className="nav-item">
+                        <a className="nav-link" href="#menu-toggle" id="menu-toggle"><i className="fa fa-bars"></i></a>
                     </li>
                     {!this.props.items == false ? 
                         this.props.items.map(item => {
                             return <li className="nav-item">
                                         <a className="nav-link" 
-                                        href="#">{item}</a>
+                                        href="#"
+                                        name={item}
+                                        value={this.state.page}
+                                        key={item}
+                                        onClick={this.handleChange}>{item}</a>
                                     </li>
                     }) : <li></li>}
                     
-                </ul>
-                <ul className="navbar-nav ml-auto">
-                    <li className="nav-item">
-                        <UploadImage />
-                    </li>
                 </ul>
                 </nav>
             </div>

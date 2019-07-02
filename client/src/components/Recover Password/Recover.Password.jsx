@@ -10,7 +10,7 @@ export default class RecoverPassword extends Component {
             <div className="RecoverPassword">
                 <div className="container">
                     <div className="row justify-content-center align-items-center" id="center">
-                        <div className="col-md-6">
+                        <div className="col-md-5">
                             <div className="card">
                                 <div className="card-header text-center">
                                     <img src = {logo}></img>
@@ -18,7 +18,7 @@ export default class RecoverPassword extends Component {
                                 <div className="card-body">
                                     <form onSubmit={this.handleSubmit}>
                                         <div className="form-group row">
-                                            <div className="col-md-12">
+                                            <div className="col-md-8 input">
                                                 <input 
                                                 type="email" 
                                                 className="form-control" 

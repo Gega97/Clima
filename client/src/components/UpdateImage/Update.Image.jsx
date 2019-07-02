@@ -8,7 +8,7 @@ export default class UploadImage extends Component {
     render(){
         return(
             <div className="UploadImage">
-                <label for="file-input">
+                <label htmlFor="file-input">
                     <i className="fas fa-arrow-up" data-tip="Carga tu logo!"></i>
                     <ReactTooltip />
                 </label>
